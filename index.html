@@ -96,7 +96,7 @@
             <i class="fa-regular fa-pen-to-square"></i>
           </a>
         </li>
-        <li onclick="displayAlert('success','已复制群号！',5000)">
+        <li onclick="displayAlert('success','已复制群号！',5000)" style="cursor: pointer;">
           <a title="来汐的群玩！">
             <i class="fa-brands fa-qq"></i>
           </a>
@@ -112,25 +112,7 @@
         </li>
       </ul>
     </div>
-    <script type="text/javascript">
-      var system = {};
-      var p = navigator.platform;
-      var u = navigator.userAgent;
-
-      system.win = p.indexOf("Win") == 0;
-      system.mac = p.indexOf("Mac") == 0;
-      system.x11 = p == "X11" || p.indexOf("Linux") == 0;
-      console.log(system)
-      if (system.win || system.mac || system.xll) {
-        //如果是手机转
-        if (u.indexOf("Windows Phone") > -1) {
-          window.location.href ="./404.html"
-          //win手机端
-        }
-      }else{
-        window.location.href ="./404.html"
-      }
-    </script>
+    <script src="js/checkout.js"></script>
     <script src="js/rellax.min.js"></script>
     <script src="js/tanchuang.js"></script>
     <script>
