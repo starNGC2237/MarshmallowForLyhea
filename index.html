@@ -1,25 +1,32 @@
+<!--
+ * @Author: zhilutianji
+ * @Date: 2022-06-29 12:49:00
+ * @Description: 【for Lyhea】
+-->
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <title>祝汐汐出道一周年快乐！</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="shiny.css" />
+    <link
+      href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.1.1/css/all.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <div class="logo">
       <img src="img/logo.svg" alt="" />
-      <h3 style="align-self: center;">happy first anniversary</h3>
+      <h3 style="align-self: center">happy first anniversary</h3>
     </div>
     <div class="menu"><img src="img/menu.svg" alt="" /></div>
-
     <div class="section">
       <div class="slogan">
         <h3 class="rellax" data-rellax-speed="6">祝汐汐</h3>
         <h1 class="rellax" data-rellax-speed="5">一周年快乐</h1>
-        <p class="rellax" data-rellax-speed="3">
-          好耶ヾ(*′▽‘*)ﾉ
-        </p>
+        <p class="rellax" data-rellax-speed="3">好耶ヾ(*′▽‘*)ﾉ</p>
       </div>
       <img class="img1 rellax" data-rellax-speed="-2" src="img/1.png" alt="" />
       <img class="img2 rellax" data-rellax-speed="9" src="img/2.png" alt="" />
@@ -55,9 +62,74 @@
         alt=""
       />
     </div>
-    <div class="section" style="height: 50vh;"></div>
-    <div style="height: 100vh;background-color:blue"></div>
+    <div class="section" style="height: 50vh"></div>
+    <div style="height: calc(100vh + 50px); background-color: blue"></div>
+    <div class="shiny">
+      <div class="color"></div>
+      <div class="color"></div>
+      <div class="color"></div>
+      <ul>
+        <li>
+          <a
+            href="https://space.bilibili.com/1586717744"
+            target="_blank"
+            title="Lyhea的空间"
+          >
+            <i class="fa-brands fa-bilibili"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://zh.moegirl.org.cn/%E9%B6%86%E6%B1%90%E9%9B%85"
+            target="_blank"
+            title="萌娘百科"
+          >
+            <i class="fa-regular fa-address-card"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://space.bilibili.com/1586717744/article"
+            target="_blank"
+            title="醒梦集序"
+          >
+            <i class="fa-regular fa-pen-to-square"></i>
+          </a>
+        </li>
+        <li onclick="displayAlert('success','已复制群号！',5000)">
+          <a title="来汐的群玩！">
+            <i class="fa-brands fa-qq"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/starNGC2237/MarshmallowForLyhea"
+            target="_blank"
+            title="源码"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script type="text/javascript">
+      var system = {};
+      var p = navigator.platform;
+      var u = navigator.userAgent;
+      
+      system.win = p.indexOf("Win") == 0;
+      system.mac = p.indexOf("Mac") == 0;
+      system.x11 = p == "X11" || p.indexOf("Linux") == 0;
+      if (system.win || system.mac || system.xll) {
+        //如果是手机转
+        if (u.indexOf("Windows Phone") > -1) {
+          window.location.href ="./404.html"
+          //win手机端
+        }
+      }
+    </script>
     <script src="js/rellax.min.js"></script>
+    <script src="js/tanchuang.js"></script>
     <script>
       var rellax = new Rellax(".rellax", {
         horizontal: true,
