@@ -24,7 +24,7 @@ function displayAlert(type, data, time) {
   lunbo.style.right = "5%";
   lunbo.style.top = "10%";
   lunbo.style.color = "white";
-  lunbo.style.fontSize = "1vh";
+  lunbo.style.fontSize = "1.75vh";
   lunbo.style.borderRadius = "1vh";
   lunbo.style.textAlign = "center";
   lunbo.style.lineHeight = "6vh";

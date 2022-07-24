@@ -48,19 +48,19 @@
     right: 100px;
 }
 
-ul {
+.shiny ul {
     position: relative;
     display: flex;
     z-index: 2;
 }
 
-ul li {
+.shiny ul li {
     position: relative;
     list-style: none;
     margin: 10px;
 }
 
-ul li a {
+.shiny ul li a {
     position: relative;
     width: 80px;
     height: 80px;
@@ -81,11 +81,11 @@ ul li a {
     overflow: hidden;
 }
 
-ul li a:hover {
+.shiny ul li a:hover {
     transform: translateY(-20px);
 }
 
-ul li a::before {
+.shiny ul li a::before {
     content: "";
     position: absolute;
     top: 0;
@@ -97,6 +97,6 @@ ul li a::before {
     transition: all 0.5s;
 }
 
-ul li a:hover::before {
+.shiny ul li a:hover::before {
     transform: skewX(45deg) translateX(-150px);
 }
