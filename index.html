@@ -64,7 +64,47 @@
       />
     </div>
     <div class="section" style="height: 50vh"></div>
-    <div class="glass"></div>
+    <div class="glass">
+      <div class="card">
+        <div class="content">
+          <h2>01</h2>
+          <h3>Card One</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto
+            rerum vitae incidunt, eveniet recusandae architecto corrupti quidem
+            magnam qui voluptatem animi molestiae eos. Perferendis suscipit
+            blanditiis dolorem in ex.
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2>02</h2>
+          <h3>Card Two</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto
+            rerum vitae incidunt, eveniet recusandae architecto corrupti quidem
+            magnam qui voluptatem animi molestiae eos. Perferendis suscipit
+            blanditiis dolorem in ex.
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2>03</h2>
+          <h3>Card Three</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto
+            rerum vitae incidunt, eveniet recusandae architecto corrupti quidem
+            magnam qui voluptatem animi molestiae eos. Perferendis suscipit
+            blanditiis dolorem in ex.
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
     <div class="shiny">
       <div class="color"></div>
       <div class="color"></div>
@@ -97,7 +137,10 @@
             <i class="fa-regular fa-pen-to-square"></i>
           </a>
         </li>
-        <li onclick="displayAlert('success','已复制群号！',5000)" style="cursor: pointer;">
+        <li
+          onclick="displayAlert('success','已复制群号！',5000)"
+          style="cursor: pointer"
+        >
           <a title="来汐的群玩！">
             <i class="fa-brands fa-qq"></i>
           </a>
@@ -116,9 +159,16 @@
     <script src="js/checkout.js"></script>
     <script src="js/rellax.min.js"></script>
     <script src="js/tanchuang.js"></script>
+    <script src="js/vanilla-tilt.js"></script>
     <script>
       var rellax = new Rellax(".rellax", {
         horizontal: true,
+      });
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
       });
     </script>
   </body>
