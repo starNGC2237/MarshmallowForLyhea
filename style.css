@@ -7,6 +7,7 @@
 
 body {
   overflow-x: hidden;
+  line-height: 1.5;
 }
 
 .logo {
@@ -115,7 +116,7 @@ body {
 .img7 {
   position: absolute;
   top: 60%;
-  right: 2 0%;
+  right: 20%;
 }
 
 .img8 {
@@ -133,5 +134,5 @@ body {
 .img10 {
   position: absolute;
   top: 55%;
-  right: 0%;
+  right: 0;
 }
